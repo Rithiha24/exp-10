@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Q_2.CSS">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script>
+            var app=angular.module("myApp",['ngRoute']);
+            app.config(function($routeProvider){
+               $routeProvider.when('/2030',{
+                templateUrl:'2030.html'
+               })
+               .when('/2083',{
+                templateUrl:'2083.html'
+               })
+               .when('/2084',{
+                templateUrl:'2084.html'
+               })
+               .when('/2086',{
+                templateUrl:'2086.html'
+               })
+    
+            });
+        </script>
+    </head>
+    <body ng-app="myApp">
+        <div class="sidebar" width="20%">
+            <h2>REGISTER NUMBERS</h2>
+            <a href="#!2056"><b>URK20CS2056</b></a>
+            <a href="#!2076"><b>URK20CS2076</b></a>
+            <a href="#!4084"><b>URK20CS4084</b></a>
+            <a href="#!4086"><b>URK20CS4086</b></a>
+        </div>
+        <div class="content" ng-view></div>
+</body>
+</html>
+
+
+2056.html
+<h2>SARA</h2>
+<br><br>
+<P>
+    <b>Register Number: </b>URK20CS2056
+    <br>
+    <b>Course: </b>BTech Computer Science and Engineering (Specialization in Artificial Intelligence)
+    <br>
+    <b>Year of Duration: </b>2020 - 2024
+</P>
+
+2076.html
+<h2>RITHIHA</h2>
+<br><br>
+<P>
+    <b>Register Number: </b>URK20CS2076
+    <br>
+    <b>Course: </b>BTech Computer Science and Engineering (Specialization in Artificial Intelligence)
+    <br>
+    <b>Year of Duration: </b>2020 - 2024
+</P>
+
+4084.html
+<h2>RIYA</h2>
+<br><br>
+<P>
+    <b>Register Number: </b>URK20CS4084
+    <br>
+    <b>Course: </b>BTech Computer Science and Engineering (Specialization in Artificial Intelligence)
+    <br>
+    <b>Year of Duration: </b>2020 - 2024
+</P>
+
+2086.html
+<h2>NIVI</h2>
+<br><br>
+<P>
+    <b>Register Number: </b>URK20CS4086
+    <br>
+    <b>Course: </b>BTech Computer Science and Engineering (Specialization in Artificial Intelligence)
+    <br>
+    <b>Year of Duration: </b>2020 - 2024
+</P>
+
+
